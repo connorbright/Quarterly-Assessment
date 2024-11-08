@@ -20,9 +20,6 @@ Setup
 Step 1: Clone or Download the Repository
 You can either clone the repository using Git or download the project as a ZIP file and extract it.
 
-bash
-Copy code
-git clone <repository-url>
 Step 2: Create the Database
 The application assumes that an SQLite database file named mcq_questions.db exists in the same directory as the application.
 
@@ -48,14 +45,11 @@ You can create this database manually using SQLite3 or use any database manageme
 Step 3: Install Dependencies
 If you don't already have Tkinter installed, you can install it by running:
 
-bash
-Copy code
-pip install tk
+
 Step 4: Running the Application
 Once you have set up the database and installed the necessary dependencies, navigate to the directory where the main.py file is located and run the following command:
 
-bash
-Copy code
+
 python main.py
 This will open the application window, allowing you to interact with the MCQ questions.
 
