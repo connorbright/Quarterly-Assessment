@@ -1,7 +1,5 @@
 # Quarterly-Assessment
 
-Sure! Here's a sample README file that you can include with your project. It explains the purpose of the project, how to set it up, and how to use it.
-
 MCQ Question Viewer - Python Tkinter Application
 This Python application is a Multiple Choice Question (MCQ) viewer that interacts with an SQLite database. The app allows users to select a course, load questions from the database, and answer them through a graphical user interface (GUI) built using Tkinter. It is designed to help users study and practice multiple-choice questions.
 
@@ -79,24 +77,3 @@ Click the "Submit Answer" button to check if your answer is correct.
 The next question will be displayed automatically after submitting an answer.
 4. End of Quiz:
 Once all the questions have been answered, a message will appear indicating that the quiz is complete.
-
-Example Screenshot
-
-(Note: This screenshot is just an example. You can include an actual screenshot of your application if you like.)
-
-Code Structure
-The main Python code is in the main.py file. Here's a brief overview of its components:
-
-MCQApp class
-__init__(): Initializes the GUI components, including labels, buttons, and radio buttons.
-load_questions(): Connects to the SQLite database, fetches all questions from the selected course, and stores them in a list.
-show_question(): Displays the current question and answer options.
-submit_answer(): Checks if the selected answer is correct and loads the next question.
-reset_quiz(): Resets the quiz state when all questions are answered.
-Troubleshooting
-Radio buttons preselected: If you notice that the radio buttons are preselected when the window opens, make sure the StringVar is initialized to an empty string ("") in the option_var variable in the code:
-
-python
-Copy code
-self.option_var = tk.StringVar(value="")  # Set the default value to empty string to prevent preselection
-Database not found: Ensure that your database (mcq_questions.db) is in the same directory as main.py or provide the correct path to the database in the sqlite3.connect() function.
